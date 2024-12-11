@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ruluko&amp;display=swap');
+
+
+
+.makes-us-different {
+  margin-top: 6em;
+}
+.m-top {
+  margin-top: 2em;
+}
+.m-bottom {
+  margin-bottom: 1em;
+}
+
+.why-us-icons {
+  width: 25px;
+  margin-right: 1em;
+  padding-top: 0.7em;
+}
+
+.points {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1.5em;
+}
+
+.priytam {
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+}
+
+@media (max-width: 576px) {
+  .faq_content.collaps_style .card {
+    margin-top: 2em;
+  }
+}
+
+.header_part.classic_header.menu_padding .navbar .nav-link {
+  padding: 25px 0;
+}
+
+.header_part.classic_header.menu_padding {
+  padding: 5px 50px;
+}
+
+@media (max-width: 768px) {
+  .header_part.classic_header.menu_padding {
+    padding: 5px 20px;
+  }
+}
+
+.social_icon a:first-child {
+  margin: 0;
+}
+
+
+.footer_section .single_footer_widget p  {
+  font-family: 'Ruluko', sans-serif;
+}
+
+html {
+  scroll-behavior:color: #7d7d7d;mooth;
+}
+
+.dropdown-menu {
+  width: 90%;
+  margin-left: auto;
+  max-width: 950px;
+  left: auto;
+  right: 0;
+}
+
+#navbarNavDropdown {
+  top: 56px;
+}
+
+.fa-check-circle {
+  color: rgb(32, 176, 233);
+}
+
+.service-includes {
+  background: #f4f7f8;
+  list-style: none;
+  padding: 4em 0;
+  margin: 5em 0;
+}
+.service-includes li {
+  list-style: none;
+}
+.service-includes li a{
+  color: #7d7d7d;
+  pointer-events: none;
+}
+
+.service-includes h1 {
+  margin-bottom: 1em;
+}
+
+.pricing-plans {
+  margin: -4em 0;
+}
+
+
+.services-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.green-check {
+  position: absolute;
+  left: 0;
+  color: green;
+}
+
+.red-check  {
+  position: absolute;
+  left: 0;
+  color: red;
+}
+
+.service-process {
+  background: #fff;
+}
+
+.service-process-icon:hover {
+  color: rgb(32, 176, 233);
+  transition: color 0.2s ease-in-out;
+}
+
+.breadcrumb_part.services_details_breadcrumb.ecommerce {
+  background: #6C63FF;
+}
+
+.breadcrumb_part.services_details_breadcrumb.real-estate {
+  background: #1c717c;
+}
+
+.breadcrumb_part.services_details_breadcrumb.static {
+  background: #50a3a4;
+}
+
+.breadcrumb_part.services_details_breadcrumb.apps {
+  background: #8769F9;
+}
+
+.breadcrumb_part.services_details_breadcrumb.digital-m {
+  background: #134985;
+}
+
+/* https://www.w3schools.com/howto/howto_css_flip_card.asp */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  width: 100%;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-gird-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  grid-gap: 10px;
+  margin: 6em 0;
+}
+
+.flip-card-front, .flip-card-back {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 5em 1em;
+  background: #8769F9;
+  
+}
+.dm .flip-card-front, .dm .flip-card-back {
+  background: #134985;
+  
+}
+
+
+
+.flip-card-front h1, .flip-card-back h1, .flip-card-front h3, .flip-card-back p {
+  color: #fff;
+}
+
+@media(max-width: 1300px) {
+  .flip-gird-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 800px) {
+  .flip-gird-container {
+    grid-template-columns: 1fr;
+  }
+
+  .flip-card .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+@media(max-width: 400px) {
+  .flip-card {
+    height: 400px;
+  }
+}
+
